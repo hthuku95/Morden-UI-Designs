@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul.nav{
+    position: relative;
+    padding: 0;
+    height: 100px;
+    margin-bottom: 30px;
+    background-color: #eee;
+    box-shadow:0px 1px 6px rgb(29, 27, 44);
+}
+ul.nav > li {
+    display: inline;
+    padding: 20px 16px;
+}
+ul.nav > li.nav-item-left {
+    float: left;
+}
+ul.nav > li.nav-item-right {
+    float: right;
+    margin: 16px;
+    border:none;
+    padding: 10px 16px;
+    border-radius: 25px;
+    background-color: rgba(221, 30, 212, 0.842);
+
+}
+ul.nav > li > a{
+    color: rgb(44, 44, 44);
+}
+ul.nav > li.nav-item-right > a{
+    color: #fff;
+}
+div.showcase {
+    max-width: 96%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 2em;
+    margin-bottom: 3em;
+}
+div.showcase > div.control-panel{
+    display:grid;
+    grid-template-rows:1fr 1fr;
+    grid-gap:10em;
+    background-color: rgb(29, 27, 44);
+    border-radius:25px;
+    color: white;
+    box-shadow:0px 1px 6px rgb(29, 27, 44)
+}
+div.showcase > div.control-panel > div {
+    position: relative;
+}
+div.showcase > div.control-panel > div > h3 {
+    color: rgb(161, 161, 161);
+    padding: 10px 16px;
+}
+div.showcase > div.control-panel > div > ul {
+    margin-left: 20px;
+}
+div.showcase > div.control-panel > div > ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(162, 86, 224); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    padding: 10px 16px;
+}
+div.showcase > div.control-panel > div.create-teams > div.teams {
+    background-color: rgb(70, 65, 104);
+    border-radius: 25px;
+    margin:20px;
+    padding-bottom: 25px;
+    
+}
+div.showcase > div.control-panel > div.create-teams > div.teams > h4 {
+    padding:16px;
+}
+div.showcase > div.control-panel > div.create-teams > div.teams > p {
+    padding:16px;
+}
+div.showcase > div.control-panel > div.create-teams > div.teams > a.try-free {
+    display:block;
+    position: relative;
+    max-width:90%;
+    text-decoration:none;
+    color: rgb(82, 80, 80);
+    margin: 20px;
+    padding: 10px;
+    background-color:#ddd ;
+    border-radius: 10px;
+    text-align: center;
+    font-weight:150%;
+}
+div.showcase > div.dashboard > h1 {
+    color:rgb(82, 80, 80);
+    padding: 16px;
+}
+div.showcase > div.dashboard > div.container {
+    position: relative;
+    display: grid;
+    grid-gap:2em;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+}
+div.showcase > div.dashboard > div.container > div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+}
+div.showcase > div.dashboard > div.container > div > div{
+    height:150px;
+    width:150px;
+    border-radius: 25px;
+    background-color: rgba(221, 30, 212, 0.842);
+    text-align: center;
+    box-shadow:0px 1px 6px rgb(221, 30, 212, 0.842)
+}
+div.showcase > div.dashboard > div.container > div > div > h1 {
+    padding-top: 37px;
+    position: relative;
+    color: #fff;
+}
+div.showcase > div.dashboard > div.container > div > p {
+    padding-left: 16px;
+    font-weight: bold;
+}
