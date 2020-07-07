@@ -21,7 +21,14 @@
         <div class="control-panel">
             <div>
                 <h3>PROJECTS</h3>
-                <ul>
+                <div class="forms" id="form">
+                    <form action="" method="post">
+                        <input type="text" name="project" id="projectform" class="project-form">
+                        <input type="submit" value="Add project" class="project-button" id="projectbutton">
+                    </form>
+                    
+                </div>
+                <ul class="project-list" id="project-list">
                     <li>Gmail Api</li>
                     <li>Blender Castle</li>
                     <li>Unity Game</li>
@@ -41,7 +48,7 @@
         </div>
         <div class="dashboard">
             <h1>Projects</h1>
-            <div class="container">
+            <div class="container" id="container">
                 <div>
                     <div class="icon-avatar"></div>
                     <p class="project-title">Gmail Api</p>

@@ -150,3 +150,26 @@ div.showcase > div.dashboard > div.container > div > p {
     padding-left: 16px;
     font-weight: bold;
 }
+div.forms {
+    margin: auto;
+    text-align: center;
+}
+div.forms > form > input.project-form {
+    border: none;
+    border-bottom:rgb(82, 18, 112) solid 4px;
+    background-color: rgb(29, 27, 44);
+    height:50px;
+    color: #fff;
+    outline: none;
+    font-size: 120%;
+}
+div.forms > form > input.project-button {
+    height:50px;
+    background-color:rgb(82, 18, 112);
+    border:none;
+    color:#fff;
+    margin: 8px;
+    padding: 10px;
+    border-radius:25px;
+    outline: none;
+}
