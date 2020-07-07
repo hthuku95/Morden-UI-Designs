@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-color: rgb(27, 20, 68);
+}
+a{
+    color: rgb(59, 29, 94);
+    text-decoration: none;
+}
+
+
+.container{
+    height: 800px;
+    width: 800px;
+    margin:50px auto;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-gap: 1em;
+}
+.container > div.form {
+    background-color: #fff;
+    height: 550px;
+    width: 300px;
+    border-radius: 25px;
+    color: rgb(34, 33, 33);
+    text-align: center;
+    position:relative ;
+}
+.container > div.form-1 {
+
+}
+.container > div.form-2 {
+    margin-top: 100px;
+    
+}
+.container > div.form-2 > h3 {
+    margin-bottom: 30px;
+    margin-top:30px;
+}
+.container > div.form-2 > a {
+    color: rgb(46, 75, 202);
+}
+.container > div.form-2 > form {
+    position: relative;
+    text-align: left;
+    padding: 30px;
+}
+.container > div.form-2 > form > div.form-group {
+    margin-bottom: 20px;
+
+}
+.container > div.form-2 > form > div.form-group > input {
+    outline: none;
+    height: 35px;
+    border: #ddd solid 2px;
+    border-radius: 8px;
+    width: 100%;
+}
+.container > div.form-2 > form > div.form-group > label {
+    font-weight: bold;
+}
+.container > div.form-2 > form > div.form-group > a.btn {
+    display: block;
+    background-color: rgb(27, 20, 68);
+    color: #fff;
+    padding: 16px;
+    margin-top: 15px;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+}
+.container > div.form-2 > form > div.form-group > input.checkbox {
+    height: 16px;
+    width: 40px;
+}
+.container > div.form-2 > form > div.form-group > input.checkbox:after{
+    background-color: rgb(27, 20, 68);
+}
