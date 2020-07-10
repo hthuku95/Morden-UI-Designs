@@ -9,8 +9,23 @@
 </head>
 <body>
     <div class="container" id="container">
-        <div class="form form-1"></div>
-        <div class="form form-2">
+        <div class="form form-1">
+            <h3>Login Authentication</h3>
+            <p class="info-ver" id="infover">To continue loging in you need to complete the follwing:</p>
+            <div class="radio radio-button-one">
+                <input type="radio" name="email" id="email"><p class="identifier">Verification code via email</p><br>
+            </div>
+            <p class="confirmation" id="radioconfirmation"></p>
+            <div class="radio radio-button-two">
+                <input type="radio" name="email" id="sms"><p class="identifier"> Verification code via SMS</p><br>
+            </div>
+            <p class="confirmation" id="smsconfirmation"></p>
+            <a href="#" id="verifybutton">Verify</a>
+            <div class="radio check">
+                <input type="checkbox" name="rememberdevice" id="rememberdevice" class="checkbox"> <p>Remember this Device</p>
+            </div>
+        </div>
+        <div class="form form-2" id="form-2">
             <h3>Login</h3>
             <a href="#">Create an account</a>
             <form action="#" method="post">
@@ -23,9 +38,9 @@
                     <input type="password" name="password" id="password"><br>
                 </div>
                 <div class="form-group">
-                    <a href="#" class="btn">Login</a>
+                    <a href="#" class="btn" id="login">Login</a>
                 </div>
-                <div class="form-group">
+                <div class="form-group check">
                     <input type="checkbox" name="keeplogin" id="keeplogin" class="checkbox"> <p>Keep me logged in</p> 
                 </div>
             </form>

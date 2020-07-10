@@ -33,6 +33,56 @@ a{
 .container > div.form-1 {
 
 }
+.container > div.form-1 > h3 {
+    margin-bottom: 30px;
+    margin-top:30px;
+}
+.container > div.form-1 > p.info-ver {
+    margin: auto;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 85%;
+    width: 70%;
+    
+}
+.container > div.form-1 > p.confirmation {
+    text-align: left;
+    margin-left: 50px;
+    color: rgb(156, 156, 156);
+    font-size: 75%;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.container > div.form-1 > .radio {
+    margin: auto 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.container > div.form-1 > .radio > p.identifier {
+    font-weight: bolder;
+}
+.container > div.form-1 > a {
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+    display: block;
+    padding: 16px;
+    background-color: rgb(27, 20, 68);
+    color: #fff;
+    border-radius: 10px;
+}
+.container > div.form-1 > .check {
+    width: 60%;
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:5% 95% ;
+    grid-gap: 2em;
+}
+.container > div.form-1 > div.check > input.checkbox {
+    height: 16px;
+    width: 40px;
+}
 .container > div.form-2 {
     margin-top: 100px;
     
@@ -44,6 +94,7 @@ a{
 .container > div.form-2 > a {
     color: rgb(46, 75, 202);
 }
+
 .container > div.form-2 > form {
     position: relative;
     text-align: left;
@@ -73,10 +124,28 @@ a{
     border-radius: 10px;
     text-align: center;
 }
+.container > div.form-2 > form > .check {
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:10% 90% ;
+    grid-gap: 2em;
+}
 .container > div.form-2 > form > div.form-group > input.checkbox {
     height: 16px;
     width: 40px;
 }
 .container > div.form-2 > form > div.form-group > input.checkbox:after{
     background-color: rgb(27, 20, 68);
+}
+.messages {
+    background-color: rgb(51, 161, 75);
+    color: #fff;
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    padding: 10px 16px;
+}
+.danger {
+    background-color: rgb(207, 87, 87);
 }
