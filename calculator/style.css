@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 150%;
+    font-weight: bold;
+    box-shadow:0px 1px 6px #d4d4d4;
+    transition: all;
+    transition-duration: 1s;
+}
+button:hover{
+    height: 110%;
+    width: 110%;
+}
+.container{
+    display: grid;
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(24, 30, 85);
+    color: #fff;
+    height: 875px;
+    border-radius: 25px;
+    grid-template-rows: 275px 600px;
+    grid-gap: 2em;
+}
+.screen-showcase {
+    position: relative; 
+}
+.screen-showcase > .screen {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 540px;
+    background-color: #fff;
+    color: rgb(34, 32, 32);
+    font-weight: bold;
+    height: 185px;
+    border-radius: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    transition: all;
+    transition-duration: 2s;
+}
+.screen-showcase > .screen:hover{
+    box-shadow:0px 2px 12px #fff;
+}
+.screen-showcase > .screen > p.question {
+    padding: 8px;
+    font-size: 200%;
+}
+.screen-showcase > .screen > p.answer {
+    padding: 8px;
+    font-size: 300%;
+}
+.screen-showcase > .result-buttons {
+    position: relative;
+    margin: auto;
+    width: 540px;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4em;
+}
+.screen-showcase > .result-buttons > button {
+    background-color: rgba(221, 30, 212, 0.842);
+    color: #fff;
+    box-shadow:0px 2px 6px rgba(221, 30, 212, 0.842);
+}
+.row-showcase {
+    position: relative;
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+}
+.row-showcase > .row {
+    position: relative;
+    margin: auto;
+    width: 540px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+.row-showcase > .row > button {
+    height: 50px;
+    border-radius: 10px;
+}
+.row-showcase > .row > button.operands {
+    height: 75px;
+    background-color:rgba(221, 30, 212, 0.842) ;
+    color :#fff;
+    box-shadow:0px 1px 6px rgba(221, 30, 212, 0.842)
+}
