@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #d4d4dd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    margin: auto;
+    margin-left:300px ;
+    margin-top: 200px;
+    margin-bottom: 500px;
+    height: 500px;
+    width: 800px;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: "Days Days . ."
+                         "Days Days Calender Calender"
+                         ". Engagements Engagements Engagements" 
+                         ". Engagements Engagements Engagements";
+}
+
+.rounded{
+    border-radius:25px;
+}
+.days{
+    grid-area: Days;
+    background-color: rgb(36, 30, 87);
+}
+.days >.days-info {
+    position: relative;
+    margin: auto 30px;
+    padding-top: 50px;
+    color: #fff;
+    display: grid;
+    grid-template-areas: "Num Num . . ."
+                         "Num Num . . . "
+                         "Num Num Word Word .";
+}
+.days >.days-info > .num {
+    position: relative;
+    grid-area: Num;
+    text-align: center;
+    padding: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+    border: solid 4px rgb(31, 25, 85);
+}
+.days >.days-info > .word {
+    grid-area: Word;
+}
+.engagements{
+    grid-area: Engagements;
+    background-color: #fff;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: ". . . . . . . . "
+                         ".Info Info Info Info Info Btn."
+                         ".Like Like Star Star Comm Comm ."
+                         ".Like Like Star Star Comm Comm ."
+                         ".Like Like Star Star Comm Comm ."
+                         ". . . . . . . .";
+}
+.engagements > .stat {
+    background-color: rgb(253, 124, 2);
+    color: #fff;
+    border-radius: 25px;
+}
+.engagements > .like {
+    grid-area: Like;
+    background-color: yellow;
+}
+.engagements > .star {
+    grid-area: Star;
+}
+.engagements > .comment {
+    grid-area: Comm ;
+    background-color: orangered;
+}
+.engagements > .btn {
+    grid-area: Btn;
+    background-color: #ddd;
+    max-height: 30px;
+    padding: 10px;
+    padding-top:15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.engagements > .info {
+    grid-area: Info;
+}
+
+
+.calender{
+    grid-area: Calender;
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "c c c c ";
+}
+.calender > ul{
+    grid-area: c;
+    position: relative;
+    margin: auto 30px;
+    max-height: 120px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+.calender >ul > li.day {
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    border-radius: 15px;
+}
+.calender >ul > li > p.num {
+   /* padding-top: 30px;**/
+   font-size: 120%;
+   
+}
+.calender >ul > li > p.word {
+    font-weight: bolder;
+}
+
