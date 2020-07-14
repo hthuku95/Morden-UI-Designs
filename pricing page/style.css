@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(16, 16, 17);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+button.btn {
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    outline: 0;
+}
+button.one {
+    background-color: rgb(224, 86, 86);
+}
+.header{
+    max-width: 100%;
+    text-align: center;
+    height: 50px;
+    padding: 30px;
+}
+.container{
+    position: relative;
+    height: 800px;
+    width: 1020px;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 50px;
+}
+.billing-btn {
+    text-align: center;
+    padding: 16px;
+}
+.billing-btn >p {
+    display: inline;
+}
+.billing-btn >p.switch {
+    background-color: rgb(224, 86, 86);
+    padding: 4px;
+    padding-top: 7px;
+    border-radius: 16px;
+    word-spacing: 5px;
+}
+.showcase {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1em ;
+}
+.showcase > .plan {
+    background-color: rgb(25, 25, 27);
+    height: 550px;
+    border-radius:15px;
+    padding-left: 30px;
+}
+.showcase > .plan > h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.showcase > .plan > h1 {
+    text-align: center;
+}
+.showcase > .plan > .drop-down{
+    text-align: center;
+    height: 50px;
+}
+.showcase > .plan > ul.offers{
+    margin-left: 40px;
+}
+.showcase > .plan > ul.offers > li{
+    margin-bottom: 16px;
+}
+.showcase > .plan > ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(224, 86, 86); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    padding: 10px 16px;
+}
+.showcase > .plan > a {
+    margin-left: 40px;
+    display: block;
+    padding: 16px;
+    border: solid 2px rgb(224, 86, 86);
+    max-width: 100px;
+    border-radius: 5px;
+}
+.showcase > .plan > a:hover {
+    border: none;
+    background-color: rgb(224, 86, 86);
+}
+.showcase > .plan > a:active {
+    border: none;
+    background-color: rgb(224, 86, 86);
+}
