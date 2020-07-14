@@ -7,12 +7,14 @@
     <title>Timer</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="mbody">
     <div class="container" id="container">
+        <button class="mode mode-default"  id="mdefault"></button>
+        <button class="mode mode-dark" id="mdark"></button>
         <div class="rounded days" id="days">
             <div class="days-info">
-                <div class="num"><h1>8</h1></div>
-                <div class="words">Days remaining from your trial</div>
+                <div class="num" id="num-days"><h1>8</h1></div>
+                <div class="words" id="word-days">Days remaining from your trial <br> you can renew it at a discount</div>
             </div>
         </div>
         <div class="rounded calender" id="calender">
@@ -42,9 +44,24 @@
         <div class="rounded engagements" id="engagements">
             <h1 class="info" id="info">Type something</h1>
             <p class="btn" id="btn">view all</p>
-            <div class="stat like" id="stat"></div>
-            <div class="stat star" id="stat"></div>
-            <div class="stat comment" id="stat"></div>
+            <div class="stat like" id="stat">
+                <div class="eng">
+                    <h3>365</h3>
+                    <p>Apreciations recived</p>
+                </div>
+            </div>
+            <div class="stat star" id="stat">
+                <div class="eng">
+                    <h3>678</h3>
+                    <p>Stars recived</p>
+                </div>
+            </div>
+            <div class="stat comment" id="stat">
+                <div class="eng">
+                    <h3>568</h3>
+                    <p>People commented</p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>

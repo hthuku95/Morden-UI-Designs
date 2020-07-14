@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-color: #d4d4dd;
+    background-color: #eee;
     font-family: Arial, Helvetica, sans-serif;
 }
 .container {
@@ -11,22 +11,39 @@ body {
     margin-left:300px ;
     margin-top: 200px;
     margin-bottom: 500px;
-    height: 500px;
+    height: 550px;
     width: 800px;
     display: grid;
     grid-gap: 1em;
-    grid-template-areas: "Days Days . ."
-                         "Days Days Calender Calender"
-                         ". Engagements Engagements Engagements" 
-                         ". Engagements Engagements Engagements";
+    grid-template-areas: ". .Def Dark. . "
+                         ". Days Days . . ."
+                         ". Days Days Calender Calender ."
+                         ". . Engagements Engagements Engagements . " 
+                         ". . Engagements Engagements Engagements .";
 }
-
+.mode{
+    max-width: 30px;
+    max-height: 30px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: #fff;
+    box-shadow:0px 2px 12px #ddd;
+}
+.mode-default{
+    grid-area: Def;
+    background-color: rgb(76, 128, 187);
+}
+.mode-dark{
+    grid-area: Dark;
+}
 .rounded{
     border-radius:25px;
 }
 .days{
     grid-area: Days;
     background-color: rgb(36, 30, 87);
+    box-shadow:0px 1px 6px hsl(246, 49%, 23%);
 }
 .days >.days-info {
     position: relative;
@@ -34,6 +51,7 @@ body {
     padding-top: 50px;
     color: #fff;
     display: grid;
+    gap: 0.5em;
     grid-template-areas: "Num Num . . ."
                          "Num Num . . . "
                          "Num Num Word Word .";
@@ -54,6 +72,7 @@ body {
 .engagements{
     grid-area: Engagements;
     background-color: #fff;
+    box-shadow:0px 2px 12px #ddd;
     display: grid;
     grid-gap: 1em;
     grid-template-areas: ". . . . . . . . "
@@ -67,10 +86,16 @@ body {
     background-color: rgb(253, 124, 2);
     color: #fff;
     border-radius: 25px;
+    box-shadow:0px 1px 6px rgb(253, 124, 2);
+}
+.engagements > .stat > .eng {
+    margin: auto 20px;
+    padding-top: 20px;
 }
 .engagements > .like {
     grid-area: Like;
-    background-color: yellow;
+    background-color: rgb(245, 203, 16);
+    box-shadow:0px 1px 6px rgb(245, 203, 16);
 }
 .engagements > .star {
     grid-area: Star;
@@ -78,6 +103,7 @@ body {
 .engagements > .comment {
     grid-area: Comm ;
     background-color: orangered;
+    box-shadow:0px 1px 6px orangered;
 }
 .engagements > .btn {
     grid-area: Btn;
@@ -87,6 +113,7 @@ body {
     padding-top:15px;
     border-radius: 10px;
     text-align: center;
+    box-shadow:0px 2px 12px #ddd;
 }
 .engagements > .info {
     grid-area: Info;
@@ -96,6 +123,7 @@ body {
 .calender{
     grid-area: Calender;
     background-color: #fff;
+    box-shadow:0px 2px 12px #ddd;
     text-align: center;
     display: grid;
     grid-template-areas: "c c c c ";
