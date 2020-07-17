@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: rgb(145, 96, 236);
+}
+.container {
+    background-color: rgb(97, 55, 172);
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2em;
+    border-radius: 50%;
+    padding: 50px;
+}
+.showcase {
+    background-color: #fff;
+    color: rgb(34, 32, 32);
+    border-radius: 25px;
+}
+.showcase-one > .search {
+    margin: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #ddd;
+    padding: 20px;
+}
+.showcase-one > .detail {
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    max-width: 70%;
+}
+.showcase-one > .campaign {
+    margin-bottom: 25px;
+    background-color: rgb(145, 96, 236);
+    border-radius: 25px;
+    box-shadow:0px 2px 12px rgb(145, 96, 236);
+    color: #fff;
+}
+.clicked-style {
+    margin-bottom: 25px;
+    background-color: rgb(145, 96, 236);
+    border-radius: 25px;
+    box-shadow:0px 2px 12px rgb(145, 96, 236);
+    color: #fff;
+}
+.showcase-one > .account {
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    margin: 30px;
+    height: 80px;
+}
+.showcase-one > .account > .profile-pic {
+    display: block;
+    height: 80px;
+    width: 80px;
+    background-image: url("mymodel.jpg");
+    background-position:50% 50%;
+    background-repeat: no-repeat;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+.showcase-one > .account > .username > h4{
+    margin-bottom: 20px;
+}
+.showcase-one > h4.logout{
+    margin-top: 75px;
+    margin-left: 30px;
+    color: rgb(145, 96, 236);
+}
+.showcase-two > h1.date {
+    margin: 30px;
+}
+.showcase-two > p.report {
+    margin-left:30px;
+    color:rgb(145, 96, 236);
+}
+.showcase-two > .reports {
+    margin: 30px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.showcase-two > .reports > .report-item {
+    border-radius: 20px;
+    border: solid 0.5px rgb(145, 96, 236);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.showcase-two > .reports > .clicked {
+    background-color: rgb(145, 96, 236);
+    box-shadow: 0px 2px 12px rgb(145, 96, 236);
+    color: #fff;
+}
+
+.showcase-two > .footer {
+    padding: 30px;
+}
+.showcase-two > .footer > h5 {
+    margin-bottom: 30px;
+    color: rgb(145, 96, 236);
+}
