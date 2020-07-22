@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+.container {
+    position: relative;
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: #fff;
+    box-shadow: 0px 2px 12px #ddd;
+    border-radius: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.anim {
+    animation-name: faded;
+    animation-duration: 2s;
+}
+@keyframes faded {
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+.container > .profile-pic {
+    position:relative;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+.container > .profile-pic > img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 3px 16px #ddd;
+}
+
+.username {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+.job{
+    position: relative;
+    color: rgb(99, 99, 224);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.bio{
+    position: relative;
+    max-height: 100px;
+    max-width: 90%;
+    margin: auto;
+}
+.container > .btn  >button {
+    position: relative;
+    background-color: rgb(99, 99, 224);
+    color: #fff;
+    border: none;
+    padding: 20px;
+    outline: none;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 12px rgb(99, 99, 224);
+}
