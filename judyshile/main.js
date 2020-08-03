@@ -26,3 +26,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+var about = document.getElementById('about')
+var contact = document.getElementById('contact')
+var aboutSection = document.getElementById('aboutSection')
+var contactSection = document.getElementById('contactSection')
+
+about.addEventListener('click',aboutScroll)
+contact.addEventListener('click',contactScroll)
+
+//Scrolling to the about section
+function aboutScroll (e){
+  aboutSection.scrollIntoView();
+}
+
+//Scrolling to the contact section
+function contactScroll (e){
+  contactSection.scrollIntoView();
+}
